@@ -201,4 +201,4 @@ const versions = [
 ];
 
 // El teléfono no se guarda en el repositorio: pásalo con CV_PHONE="+52 ..." al generar la versión privada.
-module.exports = { name, phone: process.env.CV_PHONE || '', email: 'oswaldocobos5@gmail.com', portfolio: '', labels, versions };
+module.exports = { name, phone: process.env.CV_PHONE || '', email: 'oswaldocobos5@gmail.com', portfolio: 'https://oswaldo-cobos.vercel.app', labels, versions };
