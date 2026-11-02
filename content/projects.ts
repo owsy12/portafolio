@@ -63,7 +63,7 @@ export const projects: Project[] = [
     status: 'Prototipo funcional',
     categories: ['Web', 'Full-Stack', 'Personal'],
     team: 'Desarrollo individual',
-    role: 'Diseño, código y documentación, todo por mi cuenta',
+    role: 'Diseño, desarrollo y documentación',
     summary:
       'Aplicación web que diseñé y programé solo para un centro nocturno: reservar mesas por fecha, controlar llegadas, abrir cuentas por código QR y registrar comandas, con una vista distinta para cada rol del personal. Quedó como prototipo funcional; el negocio no llegó a implementarlo.',
     problem:
@@ -134,7 +134,7 @@ export const projects: Project[] = [
     ],
     demo: 'descuke',
     demoNote:
-      'Es el código real de la aplicación. La conexión a Firebase se reemplazó por una base de datos simulada en tu navegador con nombres, reservas y productos ficticios. Lo que hagas se borra al cerrar la pestaña.',
+      'Es el código real de la aplicación. La conexión a Firebase se reemplazó por una base de datos simulada en el navegador con nombres, reservas y productos ficticios. Los cambios se eliminan al cerrar la pestaña.',
     notes: ['El proyecto no llegó a implementarse en el negocio.', 'La demo usa un catálogo ficticio y no incluye el logo ni los datos del negocio.'],
     group: 'propios',
     timeline: [
@@ -404,7 +404,7 @@ export const projects: Project[] = [
     kindLabel: 'Académico · equipo',
     status: 'Prototipo de interfaz',
     categories: ['Escritorio', 'Académico'],
-    team: 'Equipo de cuatro personas; mi parte fue solo el frontend (las vistas)',
+    team: 'Equipo de cuatro personas; mi participación fue el frontend (vistas)',
     role: 'Vistas del cliente en .NET MAUI',
     summary:
       'Plataforma para escuchar música, crear playlists y seguir a otros usuarios. El backend se dividió en microservicios (FastAPI y Go) con PostgreSQL y MongoDB; yo construí las vistas del cliente.',
@@ -568,15 +568,15 @@ export const projects: Project[] = [
     team: 'Individual, con Claude (de Anthropic) como asistente de IA',
     role: 'Dirección del desarrollo con IA: especificación, prompts y verificación',
     summary:
-      'Juego de rol en pixel art construido con vibe coding: yo definí el juego y sus etapas, y Claude, el asistente de IA de Anthropic, escribió el código bajo mi dirección. El resultado son unas 6,900 líneas de GDScript, contenido original y tres suites de pruebas automatizadas que pasan.',
-    problem: 'Quería comprobar hasta dónde puedo llevar un proyecto grande trabajando con IA sin perder el control: que el resultado funcione, que esté organizado y que se pueda verificar, en lugar de aceptar código que no entiendo.',
+      'Juego de rol en pixel art construido con vibe coding: definí el juego y sus etapas, y Claude, el asistente de IA de Anthropic, escribió el código bajo mi dirección. El resultado son unas 6,900 líneas de GDScript, contenido original y tres suites de pruebas automatizadas que pasan.',
+    problem: 'Evaluar cómo llevar un proyecto extenso con asistencia de IA manteniendo el control: que el resultado funcione, esté organizado y se pueda verificar.',
     goals: [
       'Construir el juego por etapas jugables, cada una con un alcance cerrado.',
       'Mantener separados los datos (especies, movimientos, tipos, objetos) y el código.',
       'Cubrir la lógica con pruebas automatizadas que se puedan volver a correr.',
     ],
     features: [
-      'Movimiento por casillas, interiores, transiciones y compañero que te sigue.',
+      'Movimiento por casillas, interiores, transiciones y compañero que sigue al jugador.',
       'Criaturas visibles en la hierba alta con rareza, tamaños y carácter propio.',
       'Captura por lanzamiento con círculo de precisión.',
       'Combate por turnos con 18 tipos, estados, críticos, experiencia y evoluciones.',
@@ -652,7 +652,7 @@ export const projects: Project[] = [
     kindLabel: 'Académico · equipo',
     status: 'Completado',
     categories: ['Escritorio', 'Académico'],
-    team: 'Equipo de cuatro personas; mi parte fue solo el frontend (las vistas)',
+    team: 'Equipo de cuatro personas; mi participación fue el frontend (vistas)',
     role: 'Todas las vistas del cliente (WPF) y documentación técnica',
     summary:
       'Sistema de escritorio para controlar productos, proveedores, reservas, movimientos de entrada y salida, y reportes. Se compone de un cliente WPF, un servidor con servicios WCF y una biblioteca de clases compartida.',
@@ -674,7 +674,7 @@ export const projects: Project[] = [
       ],
     },
     contributions: [
-      'Hice todas las vistas del cliente en WPF: 30 pantallas en XAML.',
+      'Desarrollé todas las vistas del cliente en WPF: 30 pantallas en XAML.',
       'Inicio de sesión y menús principales para administrador y empleado.',
       'Productos: registrar, consultar (vista de administrador y de empleado) y modificar.',
       'Proveedores, usuarios, reservas de productos, entradas y salidas, historial de movimientos, reportes por periodo y su vista previa.',

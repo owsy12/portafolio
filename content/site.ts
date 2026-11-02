@@ -84,14 +84,14 @@ export const skills: { group: string; items: { name: string; where: string }[] }
     ],
   },
   {
-    group: 'Calidad y forma de trabajo',
+    group: 'Calidad y herramientas',
     items: [
       { name: 'JUnit 5', where: 'SGPP' },
       { name: 'Jest + Supertest', where: 'API REST' },
       { name: 'Git / GitHub en equipo', where: 'Todos' },
       { name: 'UML / ICONIX', where: 'SGPP' },
       { name: 'Desarrollo con IA (Claude)', where: 'Aventura Captura 2D' },
-      { name: 'Docker Compose (levantar entornos)', where: 'Pasadena, Propify' },
+      { name: 'Docker Compose', where: 'Pasadena, Propify' },
     ],
   },
 ];

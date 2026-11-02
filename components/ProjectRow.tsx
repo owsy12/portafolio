@@ -4,7 +4,7 @@ import type { Project } from '@/content/projects';
 import { imageSize } from '@/lib/images';
 
 const demoLabel = (p: Project) =>
-  p.demo === 'descuke' ? 'Demo con el código real' : p.demo ? 'Recreación para probar' : p.gallery.length ? 'Capturas' : null;
+  p.demo === 'descuke' ? 'Demostración en línea' : p.demo ? 'Recreación interactiva' : p.gallery.length ? 'Capturas' : null;
 
 /** Fila de proyecto: miniatura a la izquierda, texto a la derecha. Toda la fila es un enlace. */
 export function ProjectRow({ project: p, priority = false }: { project: Project; priority?: boolean }) {
@@ -44,7 +44,7 @@ export function ProjectRow({ project: p, priority = false }: { project: Project;
           </Link>
         </h3>
         <p className="mt-1.5 leading-relaxed text-fg-2">{p.tagline}.</p>
-        <p className="mt-2 text-sm leading-relaxed text-muted">Mi parte: {p.role.charAt(0).toLowerCase() + p.role.slice(1)}.</p>
+        <p className="mt-2 text-sm leading-relaxed text-muted">Participación: {p.role.charAt(0).toLowerCase() + p.role.slice(1)}.</p>
         <ul className="mt-3 flex flex-wrap gap-1.5" aria-label="Tecnologías">
           {p.stack.slice(0, 5).map(s => (
             <li key={s} className="tag">{s}</li>

@@ -59,10 +59,10 @@ function List({ items }: { items: string[] }) {
 }
 
 const demoTitle: Record<string, string> = {
-  descuke: 'Pruébalo',
-  sgpp: 'Recórrelo',
-  pasadena: 'Recórrelo',
-  simuladores: 'Pruébalo',
+  descuke: 'Demostración',
+  sgpp: 'Recreación interactiva',
+  pasadena: 'Recreación interactiva',
+  simuladores: 'Recreación interactiva',
 };
 
 export default async function ProjectPage({ params }: Params) {
@@ -113,7 +113,7 @@ export default async function ProjectPage({ params }: Params) {
         </figure>
       )}
 
-      <Section id="de-que-va" title="De qué va">
+      <Section id="de-que-va" title="Descripción">
         <div className="prose-body text-[1.05rem] leading-[1.75] text-fg-2">
           <p>{p.summary}</p>
           <p>{p.problem}</p>
@@ -135,17 +135,17 @@ export default async function ProjectPage({ params }: Params) {
         </section>
       )}
 
-      <Section id="mi-parte" title="Qué hice yo">
+      <Section id="mi-parte" title="Mi participación">
         <p className="mb-4 text-fg-2">{p.team}.</p>
         <List items={p.contributions} />
         <p className="mt-6 border-l-2 border-line-2 pl-4 text-sm leading-relaxed text-muted">{p.evidence.text}</p>
       </Section>
 
-      <Section id="que-hace" title="Qué hace">
+      <Section id="que-hace" title="Funcionalidades">
         <List items={p.features} />
       </Section>
 
-      <Section id="como-esta-hecho" title="Cómo está hecho" wide>
+      <Section id="como-esta-hecho" title="Arquitectura" wide>
         <div className="max-w-[42rem]">
           <p className="leading-relaxed text-fg-2">{p.architecture.text}</p>
           <p className="mt-4 text-sm text-muted">
@@ -158,7 +158,7 @@ export default async function ProjectPage({ params }: Params) {
       </Section>
 
       {p.decisions.length > 0 && (
-        <Section id="decisiones" title="Decisiones que tomé">
+        <Section id="decisiones" title="Decisiones técnicas">
           <div className="space-y-6">
             {p.decisions.map(d => (
               <div key={d.title}>
@@ -170,28 +170,14 @@ export default async function ProjectPage({ params }: Params) {
         </Section>
       )}
 
-      {p.timeline && p.timeline.length > 0 && (
-        <Section id="cronologia" title="Cómo fue avanzando">
-          <ol className="space-y-4 border-l border-line-2 pl-5">
-            {p.timeline.map(t => (
-              <li key={t.when + t.what} className="relative">
-                <span aria-hidden="true" className="absolute -left-[1.6rem] top-2 h-2 w-2 rounded-full bg-line-2" />
-                <p className="text-sm text-muted">{t.when}</p>
-                <p className="leading-relaxed text-fg-2">{t.what}</p>
-              </li>
-            ))}
-          </ol>
-        </Section>
-      )}
-
       {p.retro && p.retro.length > 0 && (
-        <Section id="si-lo-hiciera-hoy" title="Si lo hiciera hoy">
+        <Section id="si-lo-hiciera-hoy" title="Mejoras identificadas">
           <List items={p.retro} />
         </Section>
       )}
 
       {p.code && (
-        <Section id="codigo" title="Un poco de código">
+        <Section id="codigo" title="Fragmento de código">
           <figure className="overflow-hidden rounded-xl border border-line bg-ink-2">
             <figcaption className="border-b border-line px-4 py-2.5 font-mono text-xs text-muted">{p.code.file}</figcaption>
             <pre className="overflow-x-auto p-4 font-mono text-[0.8rem] leading-relaxed text-fg-2" tabIndex={0}>
@@ -214,7 +200,7 @@ export default async function ProjectPage({ params }: Params) {
       )}
 
       <nav aria-label="Siguiente proyecto" className="mt-20 border-t border-line pt-8">
-        <p className="text-sm text-muted">Siguiente</p>
+        <p className="text-sm text-muted">Siguiente proyecto</p>
         <Link href={`/proyectos/${next.slug}`} className="group mt-1 inline-flex items-baseline gap-2">
           <span className="font-serif text-3xl">{next.title}</span>
           <span aria-hidden="true" className="text-muted transition-transform group-hover:translate-x-1 group-hover:text-emerald">→</span>

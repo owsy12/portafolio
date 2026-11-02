@@ -67,7 +67,7 @@ export function DescukeDemo() {
       </div>
       <noscript>
         <p className="mt-3 text-sm text-muted">
-          La demo necesita JavaScript. Puedes ver las capturas de pantalla más abajo.
+          La demostración requiere JavaScript. Las capturas de pantalla están más abajo.
         </p>
       </noscript>
     </div>

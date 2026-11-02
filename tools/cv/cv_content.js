@@ -36,7 +36,7 @@ const labels = {
 // ---------- Entradas reutilizables ----------
 const ES = {
   simuladores: {
-    left: ['Simuladores de examen EXANI-I y USICAMM', '  |  Desarrollador independiente'],
+    left: ['Simuladores de examen EXANI-I y USICAMM', '  |  Desarrollador de software (independiente)'],
     right: '2025',
     sub: 'Centro de Formación Juan de Zumárraga, Perote, Ver. · Trabajo por encargo · C#, .NET Framework, WPF, MVVM',
     bullets: [
@@ -92,7 +92,7 @@ const ES = {
 
 const EN = {
   simuladores: {
-    left: ['EXANI-I and USICAMM Exam Simulators', '  |  Freelance Developer'],
+    left: ['EXANI-I and USICAMM Exam Simulators', '  |  Freelance Software Developer'],
     right: '2025',
     sub: 'Centro de Formación Juan de Zumárraga, Perote, Mexico · Client project · C#, .NET Framework, WPF, MVVM',
     bullets: [
@@ -143,9 +143,9 @@ const versions = [
     file: 'Andres_Oswaldo_Cobos_CV_Junior_ES',
     lang: 'es',
     headline: 'Desarrollador de Software | Full-Stack · Java · C#/.NET · React',
-    summary: 'Estudiante de Ingeniería de Software en la Universidad Veracruzana. He desarrollado aplicaciones de escritorio y web: simuladores de examen en C#/.NET entregados a un cliente externo, un sistema de reservaciones en JavaScript y Firebase hecho de forma individual, y proyectos en equipo con Java/JavaFX, React y microservicios. Trabajo principalmente en interfaces, capas de acceso a datos y pruebas. Busco integrarme a un equipo de desarrollo profesional.',
+    summary: 'Estudiante de Ingeniería de Software en la Universidad Veracruzana, con experiencia en aplicaciones de escritorio y web con C#/.NET, Java y JavaScript. Desarrollé y entregué a un cliente dos simuladores de examen que actualmente se encuentran en uso. Busco un puesto junior, trainee o de prácticas profesionales.',
     blocks: [
-      { title: 'Experiencia con clientes', entries: [ES.simuladores] },
+      { title: 'Experiencia profesional', entries: [ES.simuladores] },
       { title: 'Proyectos', entries: [ES.descuke, ES.sgpp, ES.propify, ES.pasadena] },
     ],
     skills: [
@@ -159,9 +159,9 @@ const versions = [
     file: 'Andres_Oswaldo_Cobos_CV_Junior_EN',
     lang: 'en',
     headline: 'Software Developer | Full-Stack · Java · C#/.NET · React',
-    summary: 'Software Engineering student at Universidad Veracruzana. I have built desktop and web applications: exam simulators in C#/.NET delivered to an external client, a solo-built reservation system in JavaScript and Firebase, and team projects using Java/JavaFX, React and microservices. My work focuses on user interfaces, data access layers and testing. I am looking to join a professional development team.',
+    summary: 'Software Engineering student at Universidad Veracruzana with experience building desktop and web applications in C#/.NET, Java and JavaScript. Developed and delivered two exam simulators to a client, currently in use. Seeking a junior, trainee or internship position.',
     blocks: [
-      { title: 'Client work', entries: [EN.simuladores] },
+      { title: 'Professional experience', entries: [EN.simuladores] },
       { title: 'Projects', entries: [EN.descuke, EN.sgpp, EN.propify, EN.pasadena] },
     ],
     skills: [
@@ -175,9 +175,9 @@ const versions = [
     file: 'Andres_Oswaldo_Cobos_CV_Backend_Java_NET_ES',
     lang: 'es',
     headline: 'Desarrollador Backend Junior | Java · C#/.NET · SQL',
-    summary: 'Estudiante de Ingeniería de Software en la Universidad Veracruzana. He trabajado en capas de acceso a datos con Java y JDBC, pruebas automatizadas con JUnit 5 y Jest, y APIs REST con Node.js. Entregué simuladores de examen en C#/.NET (WPF, MVVM) a un cliente externo y desarrollé solo un sistema de reservaciones con Firebase. Busco un puesto Junior o Trainee en un equipo backend.',
+    summary: 'Estudiante de Ingeniería de Software en la Universidad Veracruzana, con experiencia en capas de acceso a datos (Java/JDBC), pruebas automatizadas (JUnit 5, Jest) y APIs REST. Desarrollé y entregué a un cliente dos simuladores de examen en C#/.NET que actualmente se encuentran en uso. Busco un puesto backend junior o trainee.',
     blocks: [
-      { title: 'Experiencia con clientes', entries: [ES.simuladores] },
+      { title: 'Experiencia profesional', entries: [ES.simuladores] },
       { title: 'Proyectos', entries: [
         { ...ES.sgpp, bullets: [
           'Desarrollé DAOs, interfaces y DTOs con JDBC sobre MySQL para proyectos, solicitudes, asignaciones, evaluaciones, profesores y roles de usuario.',
