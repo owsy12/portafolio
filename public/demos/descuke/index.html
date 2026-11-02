@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Descuke — Demo con datos ficticios</title>
+<link rel="stylesheet" href="vendor/fonts.css">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="src/css/styles.css">
+<style>
+@media print {
+  header, nav, .no-print { display: none !important; }
+  body, #app, .app-wrap { background: #fff !important; }
+  #main { padding: 0 !important; }
+  .dash { padding: 8px !important; background: none !important; }
+  #qr-grid { grid-template-columns: repeat(4, 1fr) !important; gap: 10px !important; }
+  .qr-card-print { break-inside: avoid; border: 1px solid #ccc !important; background: #fff !important; box-shadow: none !important; }
+  .qr-mesa-label { color: #000 !important; }
+  .qr-mesa-url { color: #555 !important; }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div id="modal" class="modal hidden"></div>
+<script src="vendor/qrcode.min.js"></script>
+<script src="vendor/html5-qrcode.min.js"></script>
+<script type="module" src="src/js/main.js"></script>
+<script src="js/share-reservation.js"></script>
+<script type="module" src="demo/demo-panel.js"></script>
+</body>
+</html>

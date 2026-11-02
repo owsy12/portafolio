@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Descuke — Mesa</title>
+<link rel="stylesheet" href="vendor/fonts.css">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="src/css/styles.css">
+<style>
+  .mesa-wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: var(--bg);
+  }
+  .mesa-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 28px 24px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .mesa-logo { height: 28px; margin-bottom: 12px; }
+  .mesa-num {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--purple-bright, #c4b5fd);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .mesa-info-row {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .mesa-info-row:last-of-type { border-bottom: none; }
+  .mesa-info-label {
+    font-size: 10px;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+  .mesa-info-val {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .mesa-estado {
+    text-align: center;
+    padding: 20px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: var(--text2);
+    background: var(--surface2);
+    line-height: 1.5;
+    margin: 8px 0;
+  }
+  .mesa-estado-icon { display: block; font-size: 26px; margin-bottom: 8px; }
+  .mesa-promo-tag {
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: rgba(167,139,250,0.14);
+    color: var(--purple-bright, #c4b5fd);
+    border: 1px solid rgba(167,139,250,0.28);
+    margin-top: 2px;
+  }
+  .mesa-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'DM Sans', Arial, sans-serif;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: filter .18s, transform .18s;
+    background: linear-gradient(135deg, #7c3aed, #6d28d9);
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(124,58,237,.35);
+  }
+  .mesa-btn:hover:not(:disabled) { filter: brightness(1.1); transform: translateY(-1px); }
+  .mesa-btn:disabled { opacity: .55; cursor: not-allowed; }
+  .mesa-link {
+    display: block;
+    text-align: center;
+    color: var(--purple, #a78bfa);
+    font-size: 13px;
+    margin-top: 12px;
+    text-decoration: none;
+  }
+  .mesa-link:hover { text-decoration: underline; }
+  .mesa-msg {
+    color: #f87171;
+    font-size: 13px;
+    text-align: center;
+    min-height: 18px;
+    margin-top: 4px;
+  }
+  .mesa-loading {
+    color: var(--text3);
+    font-size: 14px;
+    text-align: center;
+    padding: 48px;
+  }
+</style>
+</head>
+<body>
+<div id="mesa-app">
+  <div class="mesa-loading">Verificando sesión...</div>
+</div>
+<script type="module" src="src/js/mesa-app.js"></script>
+<script type="module" src="demo/demo-panel.js"></script>
+</body>
+</html>
